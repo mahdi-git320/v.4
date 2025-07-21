@@ -220,7 +220,7 @@
       }
     }
   }
-}
+}/*
 .header__bottom__nav__category__mega{
           width: 0px;
           height: 0;
@@ -229,7 +229,7 @@
           top: 100%;
           transition: 300ms;
           display: flex;
-          /* display: none; */
+           display: none; 
           .header__bottom__nav__category__mega__submenu{
             width: 20%;
             height: 100%;
@@ -277,7 +277,7 @@
         &:hover .header__bottom__nav__category__mega{
           width: 80vw;
           height: 65vh;
-        }
+        }*/
 /*.header-main-lowerheader_nav-mega-menu_absolute {
   position: absolute;
   width: 80vw;
