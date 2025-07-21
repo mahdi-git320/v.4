@@ -1,0 +1,128 @@
+.bestSale {
+  width: 10ale;
+  padding: 0 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  .bestSale__wrapper {
+    width: 100%;
+    max-width: 1400px;
+    height: 405px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e2;
+    .bestSale__wrapper__title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 75px;
+      position: relative;
+      .bestSale__wrapper__title__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        width: 300px;
+        height: 100%;
+        h2 {
+          color: #0c0c0c;
+          font-family: Iran;
+          font-size: 21px;
+          font-weight: 400;
+        }
+      }
+      .bestSale__wrapper__title__left {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 28px;
+        font-family: Iran;
+        text-decoration: none;
+        font-size: 14px;
+        color: #19bfd3;
+      }
+    }
+    .bestSale__wrapper__slider {
+      width: 100%;
+      height: calc(100% - 75px); /*75 px is for our title*/
+      padding: 0 8px;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid var(--color-app-background);
+      }
+      .swiper-button-next:after,
+      .swiper-rtl .swiper-button-prev:after {
+        font-size: 14px;
+        color: #2b2b2b;
+      }
+      .swiper-button-disabled {
+        display: none !important;
+      }
+
+      .bestSale__wrapper__slider__item {
+        width: 100%;
+        height: 100%;
+        .bestSale__wrapper__slider__item__product {
+          width: 100%;
+          height: calc(100% / 3); /*each slide 3 parts*/
+          display: flex;
+          align-items: center;
+          img {
+            width: 86px;
+            height: 86px;
+          }
+          span {
+            margin-left: 12px;
+            color: #19bfd3;
+            font-family: Iran;
+            font-size: 26px;
+            font-weight: bold;
+          }
+          p {
+            height: 100%;
+            font-family: Iran;
+            font-size: 12px;
+            color: #3f4064;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            box-orient: 2;
+            overflow: hidden;
+            padding-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-app-background);
+}
