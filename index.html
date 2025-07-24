@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./public/css/main.css" />
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <!--beginning-->
@@ -58,6 +58,8 @@
         </div>
         <div class="header-main-lowerheader">
           <nav class="header-main-lowerheader_nav">
+            <div class="mega-menu-absolute">
+
             <a href="#" class="header-main-lowerheader_nav-mega-menu after">
               <img class="header-main-lowerheader_nav-mega-menu-svg" src="./public/images/svg/nav-cat.svg" alt="">
               <h2 class="header-main-lowerheader_nav-mega-menu-title-h2">
@@ -117,85 +119,162 @@
                   
                 </div>
               </div>-->
-             <!-- <div class="header-main-lowerheader_nav-mega-menu_absolute">
-                <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu">
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div>
-                    <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
-                    <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
-                      <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
-                      src="./public/images/svg/nav-cat.svg" alt="">
-                      <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
-                        دسته‌بندی شماره یک
-                      </h3>
-                    </a>
-                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
-                    testلیبلل
-                  </div>
-                    </div>
-                  
-                </div>
-
-              </div>-->
+            
               
             </a>
 
+            <div class="header-main-lowerheader_nav-mega-menu_absolute">
+              <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu">
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_wrapper">
+                    <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_title">
+                      <p class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_title-p">
+                        مشاهده همه کالاها
+                      </p>
+                      <img
+                      class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_title-img" 
+                      src="./public/images/svg/left-arrow-2.svg"
+                       alt="">
+                    </div>
+                    <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_items">
+                      <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide a">
+                        <a class="micro-list_items-slide_a-title" href="#">
+                          <span class="micro-list_items-slide_a-title_red-span"></span>
+                          <span class="micro-list_items-slide_a-title-span">
+                            انواع مدل‌های گوشی
+                          </span>
+                          <img class="micro-list_items-slide_a-title_arrow-img" 
+                          src="./public/images/svg/left-arrow-3.svg" alt="">
+                        </a>
+                        <a class="micro-list_items-slide_a" href="#">آیفون</a>
+                        <a class="micro-list_items-slide_a" href="#">اندروید</a>
+                        <a class="micro-list_items-slide_a" href="#">نوکیا</a>
+                        <a class="micro-list_items-slide_a" href="#">شیایومی</a>
+                        <a class="micro-list_items-slide_a" href="#">هوآوی</a>
+                        <a class="micro-list_items-slide_a" href="#">پوکو</a>
+                      </div>
+                      <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide a">
+                        <a class="micro-list_items-slide_a-title" href="#">
+                          <span class="micro-list_items-slide_a-title_red-span"></span>
+                          <span class="micro-list_items-slide_a-title-span">
+                            انواع مدل‌های گوشی
+                          </span>
+                          <img class="micro-list_items-slide_a-title_arrow-img" 
+                          src="./public/images/svg/left-arrow-3.svg" alt="">
+                        </a>
+                        <a class="micro-list_items-slide_a" href="#">آیفون</a>
+                        <a class="micro-list_items-slide_a" href="#">اندروید</a>
+                        <a class="micro-list_items-slide_a" href="#">نوکیا</a>
+                        <a class="micro-list_items-slide_a" href="#">شیایومی</a>
+                        <a class="micro-list_items-slide_a" href="#">هوآوی</a>
+                        <a class="micro-list_items-slide_a" href="#">پوکو</a>
+                      </div>
+                       <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide a">
+                        <a class="micro-list_items-slide_a-title" href="#">
+                          <span class="micro-list_items-slide_a-title_red-span"></span>
+                          <span class="micro-list_items-slide_a-title-span">
+                            انواع مدل‌های گوشی
+                          </span>
+                          <img class="micro-list_items-slide_a-title_arrow-img" 
+                          src="./public/images/svg/left-arrow-3.svg" alt="">
+                        </a>
+                        <a class="micro-list_items-slide_a" href="#">آیفون</a>
+                        <a class="micro-list_items-slide_a" href="#">اندروید</a>
+                        <a class="micro-list_items-slide_a" href="#">نوکیا</a>
+                        <a class="micro-list_items-slide_a" href="#">شیایومی</a>
+                        <a class="micro-list_items-slide_a" href="#">هوآوی</a>
+                        <a class="micro-list_items-slide_a" href="#">پوکو</a>
+                      </div>
+                      <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide a">
+                        <a class="micro-list_items-slide_a-title" href="#">
+                          <span class="micro-list_items-slide_a-title_red-span"></span>
+                          <span class="micro-list_items-slide_a-title-span">
+                            انواع مدل‌های گوشی
+                          </span>
+                          <img class="micro-list_items-slide_a-title_arrow-img" 
+                          src="./public/images/svg/left-arrow-3.svg" alt="">
+                        </a>
+                        <a class="micro-list_items-slide_a" href="#">آیفون</a>
+                        <a class="micro-list_items-slide_a" href="#">اندروید</a>
+                        <a class="micro-list_items-slide_a" href="#">نوکیا</a>
+                        <a class="micro-list_items-slide_a" href="#">شیایومی</a>
+                        <a class="micro-list_items-slide_a" href="#">هوآوی</a>
+                        <a class="micro-list_items-slide_a" href="#">پوکو</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                  <div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  
+                </div>
+                  </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  
+                </div>
+                  </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  
+                </div>
+                  </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  
+                </div>
+                  </div><div class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item">
+                  <a class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a" href="#">
+                    <img class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_img" 
+                    src="./public/images/svg/nav-cat.svg" alt="">
+                    <h3 class="header-main-lowerheader_nav-mega-menu_absolute-submenu_item_h3" >
+                      دسته‌بندی شماره یک
+                    </h3>
+                  </a>
+                <div class="header-main-lowerheader_nav-mega-menu_absolute-micro-list">
+                  
+                </div>
+                  </div>
+                
+              </div>
 
-
+            </div>
+            
+            </div>
             <div class="header-main-lowerheader_nav_first-line"></div>
             <a href="#" class="header-main-lowerheader_nav-item-menu 1 after">
               <img class="header-main-lowerheader_nav-item-menu-svg 1" src="./public/images/svg/discount.svg" alt="">
@@ -1229,7 +1308,7 @@
       <!--end of fixed-supermarket-->
       </main>
       <!--end of main-->
-        <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="./swiper/swiper-bundle.min.js"></script>
       <!--stories-->
       <script>
       var swiper = new Swiper(".myStory", {
