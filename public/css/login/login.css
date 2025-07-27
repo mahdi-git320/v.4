@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-0 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-wrapper {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    .main-wrapper-logo {
+      width: 100%;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .main-wrapper-right-arrow-back-button {
+        position: absolute;
+        top: calc(80% / 2);
+        right: 5px;
+      }
+    }
+    .main-wrapper_w-full {
+      width: 100%;
+      height: calc(100% - 130px);
+      .w-full_title-h2 {
+        font-family: iran;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      .w-full-p_first {
+        margin-top: 30px;
+        .w-full-p_hi {
+          font-family: iran;
+          font-size: 12px;
+          font-weight: normal;
+          opacity: 0.7;
+        }
+      }
+      .w-full-p_second {
+        margin-top: 12px;
+        .w-full-p_description {
+          font-family: iran;
+          font-size: 12px;
+          font-weight: normal;
+          opacity: 0.7;
+        }
+      }
+      .w-full_textbox{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        .w-full_textbox-input{
+            width: 100%;
+            height: 50px;
+            border: 1px solid #0fabc6;
+            border-radius: 10px;
+            direction: rtl;
+            padding: 10px;
+        }
+      }
+      .w-full_click{
+        margin-top: 20px;
+        padding: 5px;
+        .w-full-click_button{
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            background-color: #ef4056;
+            border-radius: 10px;
+            border: 1px solid #ef4056;
+            font-size: 14px;
+            font-family: iran;
+            font-weight: normal;
+            color: white;
+        }
+      }
+      .w-full_bottom{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        .w-full_bottom-p{
+            font-size: 11px;
+            font-family: iran;
+            font-weight: normal;
+            .w-full_bottom-p-a{
+                text-decoration: none;
+                color: #0fabc6;
+            }
+        }
+      }
+    }
+  }
+}

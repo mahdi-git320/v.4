@@ -126,3 +126,6 @@
 .border-bottom {
   border-bottom: 1px solid var(--color-app-background);
 }
+.best-sale_a-item{
+  text-decoration: none;
+}
