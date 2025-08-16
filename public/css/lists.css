@@ -1,7 +1,7 @@
 .lists {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 22px 0px;
   .lists-wrapper {
     width: 100%;
@@ -9,15 +9,16 @@
     max-width: 1400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 40px;
   }
-  .lists-container {
-    width: 100px;
-    height: 73px;
+  .lists-container-a{
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    text-decoration: none;
 
     .lists-container-a {
       text-decoration: none;

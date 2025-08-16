@@ -234,7 +234,6 @@
   border-radius: 20px;
   .header-main-lowerheader_nav-mega-menu_absolute-submenu {
     width: 20%;
-    height: 100%;
     background-color: var(--color-background-low);
     overflow-y: scroll;
     direction: ltr;
@@ -306,11 +305,10 @@
           height: 85%;
           background-color: #fff;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: flex-start;
           .header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide {
             width: 25%;
-            height: 100%;
             .micro-list_items-slide_a {
               font-size: 12px;
               font-family: iran;
