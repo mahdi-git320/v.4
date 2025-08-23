@@ -203,13 +203,14 @@
 
     .header-main-lowerheader-left-menu-city-location {
       width: 170px;
-      height: 45px !important;
+      height: 35px;
       display: flex;
       justify-content: center;
       align-items: center;
       column-gap: 10px;
       text-decoration: none;
       border-radius: 40px;
+      background-color: #fef6ef;
       .header-main-lowerheader-left-menu-city-location-svg {
         width: 18px;
       }
@@ -235,11 +236,13 @@
   .header-main-lowerheader_nav-mega-menu_absolute-submenu {
     width: 20%;
     background-color: var(--color-background-low);
-    overflow-y: scroll;
+    overflow-y: auto;
     direction: ltr;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     .header-main-lowerheader_nav-mega-menu_absolute-submenu_item {
       width: 100%;
+      height: 70px;
       &:hover {
         background-color: #fff;
       }
@@ -278,13 +281,17 @@
       left: 0;
       top: 0;
       display: none;
-      overflow-y: scroll;
+      overflow-y: auto;
+      pointer-events: auto !important;
+      z-index: 9999 !important;
       .header-main-lowerheader_nav-mega-menu_absolute-micro-list_wrapper {
         padding: 20px;
         background-color: #fff;
         width: 100%;
         height: 100%;
         border-radius: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
         .header-main-lowerheader_nav-mega-menu_absolute-micro-list_title {
           width: 100%;
           height: 15%;
@@ -302,11 +309,12 @@
         }
         .header-main-lowerheader_nav-mega-menu_absolute-micro-list_items {
           width: 100%;
-          height: 85%;
           background-color: #fff;
           display: flex;
+          flex-wrap: wrap;
           align-items: flex-start;
           justify-content: flex-start;
+          pointer-events: auto;
           .header-main-lowerheader_nav-mega-menu_absolute-micro-list_items-slide {
             width: 25%;
             .micro-list_items-slide_a {
@@ -318,6 +326,7 @@
               display: block;
               direction: rtl;
               padding: 5px 10px 5px 10px;
+              box-sizing: border-box;
             }
             .micro-list_items-slide_a-title {
               text-decoration: none;
@@ -351,8 +360,8 @@
   z-index: 9999;
   display: flex;
   &:hover .header-main-lowerheader_nav-mega-menu_absolute {
-    width: 85vw;
-    height: 60vh;
+    width: 1200px;
+    height: 400px;
   }
   &:hover .header-main-lowerheader_nav-mega-menu_absolute-micro-list {
     display: flex;

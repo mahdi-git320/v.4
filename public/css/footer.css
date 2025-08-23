@@ -135,6 +135,10 @@
         background-color: rgb(190, 190, 190);
         border: none;
         border-radius: 10px;
+        cursor: pointer;
+        font-family: iran;
+        font-size: 14px;
+        color: #fff;
       }
     }
   }

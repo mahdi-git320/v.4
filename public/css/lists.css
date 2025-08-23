@@ -12,30 +12,32 @@
     justify-content: space-between;
     padding: 0px 40px;
   }
-  .lists-container-a{
+  .lists-container-a {
     width: fit-content;
-    height: fit-content;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
-    .lists-container-a {
-      text-decoration: none;
+    .lists-container{
+      place-self: center;
     }
-    .lists-container_top-img {
-      width: 52px;
-      height: 52px;
-      object-fit: cover;
+    .lists-container_top {
+      place-self: center;
+      margin-bottom: 5px;
+      .lists-container_top-img {
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+      }
     }
     .lists-container_bottom_p {
       font-family: iran;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 11px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 5px;
       color: black;
     }
   }
