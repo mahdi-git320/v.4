@@ -28,19 +28,16 @@
     }
   }
 }
-/* Ensure container has height */
 .my-swiper-container {
   width: 100%;
   height: 300px;
   position: relative;
 }
 
-/* Ensure slides are displayed horizontally */
 .swiper-wrapper {
   display: flex;
 }
 
-/* Styling each slide */
 .my-swiper-slide {
   display: flex;
   justify-content: center;
@@ -103,7 +100,7 @@
       }
     }
   }
-  .my-swiper-slide_category_wrapper_bottom{
+  .my-swiper-slide_category_wrapper_bottom {
     display: flex;
     align-items: center;
     justify-content: center;

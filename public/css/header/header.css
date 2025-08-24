@@ -246,7 +246,6 @@
       &:hover {
         background-color: #fff;
       }
-
       .header-main-lowerheader_nav-mega-menu_absolute-submenu_item_a {
         text-decoration: none;
         color: #8c9ec0;
@@ -350,9 +349,6 @@
         }
       }
     }
-    &:hover .header-main-lowerheader_nav-mega-menu_absolute-micro-list {
-      display: flex;
-    }
   }
 }
 .mega-menu-absolute {
@@ -363,7 +359,10 @@
     width: 1200px;
     height: 400px;
   }
-  &:hover .header-main-lowerheader_nav-mega-menu_absolute-micro-list {
+  &:hover .header-main-lowerheader_nav-mega-menu_absolute-submenu_item:nth-child(1) .header-main-lowerheader_nav-mega-menu_absolute-micro-list{
     display: flex;
   }
+}
+.header-main-lowerheader_nav-mega-menu_absolute-submenu_item:hover .header-main-lowerheader_nav-mega-menu_absolute-micro-list{
+  display: flex;
 }
