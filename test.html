@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .expandable-container {
-  width: 200px; /* Initial width of the container */
-  transition: width 0.3s ease-in-out; /* Smooth transition for width */
-  overflow: hidden;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <style>
+      /* Custom Swiper container */
+      .my-swiper-container {
+        width: 100%;
+        height: 300px; /* Set your desired height */
+      }
 
-.expandable-content {
-  display: none; /* Initially hidden */
-  padding: 10px;
-  background-color: lightgray;
-  margin-top: 10px;
-}
+      /* Custom Swiper slides */
+      .my-swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd; /* Set a background color or image */
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        height: 100%;
+      }
 
-.arrow-btn {
-  background: transparent;
-  border: none;
-  font-size: 24px; /* Size of the arrow */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* Smooth rotation */
-}
+      /* Optional: Custom pagination dots */
+      .my-swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
 
-/* When the content is expanded, rotate the arrow */
-.expandable-container.expanded .arrow-btn {
-  transform: rotate(180deg);
-}
+      /* Optional: Custom navigation arrows */
+      .my-swiper-button-next,
+      .my-swiper-button-prev {
+        color: #fff;
+      }
+      .haha{
+        width: 100%;
+        height: fit-content;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        .haha_wrapper{
+          width: 100%;
+          max-width: 1400px;
+          background-color: aqua;
+          padding: 10px;
+        }
 
-/* When content is expanded, show it and increase width */
-.expandable-container.expanded {
-  width: 400px; /* Expanded width */
-}
-
-.expandable-container.expanded .expandable-content {
-  display: block; /* Show the content */
-}
-  </style>
-</head>
-<body>
- <div class="expandable-container">
-  <button class="arrow-btn">&#9660;</button> <!-- Down arrow -->
-  <div class="expandable-content">
-    <p>This is the text that will show or hide.</p>
-  </div>
-</div> 
-<script>
-  // Select the container and the button
-const expandableContainer = document.querySelector('.expandable-container');
-const arrowBtn = document.querySelector('.arrow-btn');
-
-// Toggle the expanded state
-arrowBtn.addEventListener('click', () => {
-  expandableContainer.classList.toggle('expanded');
-});
-</script>
-</body>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="haha">
+      <div class="haha_wrapper">
+    <div class="my-swiper-container">
+      <div class="my-swiper-wrapper">
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+        <div class="my-swiper-slide">Slide 1</div>
+      </div>
+      <div class="my-swiper-button-next"></div>
+      <div class="my-swiper-button-prev"></div>
+    </div>
+    </div>
+    </div>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Swiper with custom class names
+      const swiper = new Swiper(".my-swiper-container", {
+        pagination: {
+          el: ".my-swiper-pagination", // Custom pagination
+          clickable: true, // Make pagination dots clickable
+        },
+        navigation: {
+          nextEl: ".my-swiper-button-next", // Custom next button
+          prevEl: ".my-swiper-button-prev", // Custom previous button
+        },
+      });
+    </script>
+  </body>
 </html>
