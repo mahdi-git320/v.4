@@ -1,7 +1,6 @@
 .bestSale {
   width: 10ale;
   padding: 0 16px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   .bestSale__wrapper {

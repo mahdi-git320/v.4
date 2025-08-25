@@ -6,9 +6,10 @@
   --medium-plus-radius: 12px;
   --large-radius: 16px;
   --color-background-low: #f0f0f1;
-  --color-app-background:#f2f2f2;
+  --color-app-background: #f2f2f2;
   --title-color: #62666d;
-  --border-color:#e0e0e2;
-  --digikala-primary-red:#ed1944;
+  --border-color: #e0e0e2;
+  --digikala-primary-red: #ed1944;
   --link-color: #19bfd3;
+  --footer-color: #f0f0f1;
 }
